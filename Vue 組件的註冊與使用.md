@@ -29,7 +29,7 @@ new Vue({
 
 ---
 除了全域( Global )宣告以外還有 local 的宣告，它只會存在 Vue 實例裡面
-```htmlmixed=
+```html
 <div id="app">
   <my-component></my-component>
 </div>
@@ -50,7 +50,7 @@ new Vue({
 
 ---
 但是 local 有缺點，就是如果我宣告兩個 div ，但只會顯示一個
-```htmlmixed=
+```html
 <div id="app">
   <my-component></my-component>
 </div>
@@ -77,7 +77,7 @@ new Vue({
 ![](https://i.imgur.com/WhYn9TS.png)
 
 那用 Global 宣告就不會有這問題
-```htmlmixed=
+```html
 <div id="app">
   <my-component></my-component>
 </div>
