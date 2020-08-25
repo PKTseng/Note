@@ -1,11 +1,14 @@
 # Vue 組件的註冊與使用
+
+[![hackmd-github-sync-badge](https://hackmd.io/BrvtE2gzRTqBdIq_ULV8gw/badge)](https://hackmd.io/BrvtE2gzRTqBdIq_ULV8gw)
+
 Vue 組件是預先定義好的模組，包含 html 的視覺元素、綁定的資料跟偵聽器..等等，類似 Vue 實例，組件的好處是可以重複使用，在開發上可以只專注在一小區塊，維護也很方便
 `Vue.component` 前面會先傳入參數的名稱，後面的參數是 option ，option 是用模板 `template` 定義視覺元素，也直接在模板裡面去定義內容，舉例 : 在模板裡面定義 html 的內容 (hello world) ，然後在 html 裡面定義 `#app` 並在裡面放入 `my-component` 標籤，而 `my-component` 並非是 html 標籤，是我在 `Vue.component`  定義好的。
 
 `Vue.component` 有個特別的規範，就是前面的參數要全小寫並加上「 - 」分開，請養成習慣!，同時 `Vue.component` 的宣告必須在 `new Vue` 之前
 
 
-```htmlmixed=
+```html
 <div id="app">
   <my-component></my-component>
 </div>
